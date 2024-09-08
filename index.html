@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload and Processing</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>FeatureFlicks</h1>
+    <form id="upload-form" action="/process_video" method="POST" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*"id="file-input" style="display: none;">
+        <label for="file-input" class="custom-file-upload">Please Select the Video</label>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="message-container">
+        <!-- Styled file name container -->
+        <div id="file-name-container" class="hidden">
+            <span id="file-name" class="file-name"></span>
+        </div>
+
+        <!-- Styled loading message container -->
+        <div id="loading-message-container" class="hidden">
+            <span id="loading-message">Please wait, your video is being processed...</span>
+        </div>
+
+        <!-- Result container -->
+        <div id="result" class="result hidden"></div>
+    </div>
+</body>
+</html>

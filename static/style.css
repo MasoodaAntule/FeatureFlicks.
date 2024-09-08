@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-image: url("bg.jpg"); /* Specify the background image */
+    background-size: cover; /* Scale the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fallback color if the image fails to load */
+    color: white#333;
+    padding: 110px;
+} 
+
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h1 {
+    font-family: 'Playfair Display', serif;
+    background: black;
+    color:white; /* Bright orange */
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding: 10px 20px;
+    margin-top: -80px;    
+    margin-left: auto; /* Center the heading bar */
+    margin-right: auto; /* Center the heading bar */
+    font-style: italic;
+    border: 1px solid white;
+}
+
+
+/* Form styling */
+form {
+    margin-bottom: 0px;
+}
+
+/* Input field styling */
+input[type="file"] {
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    color: black; /* White text color */
+    background: White; /* Orange to yellow gradient */}
+
+/* Custom file upload button styling */
+.custom-file-upload {
+    font-family: 'Playfair Display', serif;
+    display: block;
+    width: 30%; /* Adjust as needed */
+    padding:  12px 12px;
+    font-size: 30px;
+    color: #fff;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px; /* Add space below this button */
+    text-align: center;
+    border: 1px solid white;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+
+/* Button styling */
+button {
+    font-family: 'Playfair Display', serif;
+    display: block;
+    width: 10%; /* Adjust as needed */
+    padding: 15px 20px;
+    font-size: 30px;
+    color:white;
+    background-color: #080808; /* Orange color */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    margin-top: 30px; /* Add space below this button */
+    border: 1px solid white;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.hidden {
+    display: none;
+}
+
+#file-name-container, #loading-message-container {
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    color:white;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px; /* Add space below this button */
+}
+
+#result {
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    color:white;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px; /* Add space below this button */
+}
+
+.results img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.results video {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
